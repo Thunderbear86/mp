@@ -18,9 +18,37 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // 5. Du kan lave styling her...
 
+body {
+	background-color: $secondary;
+	font-family: Bahnschrift, sans-serif;
+	color: #fff;
+	height: 100vh;
+	position: relative;
+}
+
+body#bg-img::before {
+	content: "";
+	background-image: url("../img/heroimg.jpeg");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100%;
+	width: 100%;
+	opacity: 0.2;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
 //nav
 
 //cards
+
+.card {
+	border: none;
+}
 
 //carousel
 
